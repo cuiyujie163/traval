@@ -1,0 +1,54 @@
+@import url("reset.css");
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+/*--------------------------wrap------------------------------*/
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html, body, .wrap {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+body {
+  font-size: 16px; }
+
+/*--------------------------header------------------------------*/
+.header {
+  width: 100%;
+  height: .9rem;
+  background: #39d184;
+  position: relative; }
+  .header h1 {
+    width: 100%;
+    padding: 0 .53rem;
+    font-family: "Microsoft YaHei";
+    font-weight: 100;
+    font-size: .4rem;
+    color: #fff;
+    text-align: center;
+    line-height: .9rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .header a {
+    width: auto;
+    display: block;
+    height: .9rem;
+    color: #fff;
+    font-size: .4rem;
+    line-height: .9rem;
+    position: absolute; }
+    .header a:nth-of-type(1) {
+      width: .5rem;
+      top: 50%;
+      margin-top: -.45rem;
+      left: .2rem; }
+    .header a:nth-of-type(2) {
+      top: 50%;
+      margin-top: -.45rem;
+      right: .2rem; }
+
+/*# sourceMappingURL=history.css.map */

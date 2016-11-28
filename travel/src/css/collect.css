@@ -1,0 +1,101 @@
+@import url("reset.css");
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+/*--------------------------wrap------------------------------*/
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html, body, .wrap {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+body {
+  font-size: 16px; }
+
+/*--------------------------header------------------------------*/
+.header {
+  width: 100%;
+  height: .9rem;
+  background: #39d184;
+  position: relative; }
+  .header h1 {
+    width: 100%;
+    padding: 0 .53rem;
+    font-family: "Microsoft YaHei";
+    font-weight: 100;
+    font-size: .4rem;
+    color: #fff;
+    text-align: center;
+    line-height: .9rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .header a {
+    width: auto;
+    display: block;
+    height: .9rem;
+    color: #fff;
+    font-size: .4rem;
+    line-height: .9rem;
+    position: absolute;
+    width: .5rem;
+    top: 50%;
+    margin-top: -.45rem;
+    left: .2rem; }
+
+/*--------------------------nav------------------------------*/
+.nav {
+  width: 100%;
+  height: .7rem;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+  .nav a {
+    width: .8rem;
+    height: .7rem;
+    border-left: 1px solid #ccc;
+    line-height: .7rem;
+    font-size: .4rem;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .nav ul {
+    display: -webkit-flex;
+    height: .7rem;
+    overflow: hidden; }
+    .nav ul li {
+      width: 2.25rem;
+      height: .7rem;
+      float: left;
+      line-height: .7rem;
+      text-align: center; }
+    .nav ul .bg {
+      border-bottom: 2px solid #39d184; }
+
+/*--------------------------main------------------------------*/
+.main {
+  width: 100%;
+  -webkit-flex: 1;
+  overflow: hidden; }
+
+.star {
+  width: 100%;
+  padding-top: 1.15rem;
+  text-align: center; }
+  .star img {
+    width: 1.16rem; }
+  .star h1 {
+    width: 100%;
+    line-height: .6rem;
+    color: #333;
+    font-size: .35rem; }
+  .star p {
+    line-height: .5rem;
+    color: #999;
+    font-size: .2rem; }
+
+/*# sourceMappingURL=collect.css.map */

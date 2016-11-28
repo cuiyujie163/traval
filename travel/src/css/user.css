@@ -1,0 +1,103 @@
+@import url("reset.css");
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+/*--------------------------wrap------------------------------*/
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html, body, .wrap {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+body {
+  font-size: 16px; }
+
+/*----------------------header---------------------*/
+.header {
+  width: 100%;
+  height: 3.28rem;
+  background: url("../images/user_02.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative; }
+  .header h1 {
+    width: 100%;
+    height: 3.28rem;
+    font-size: .4rem;
+    padding-left: 2.18rem;
+    line-height: 3.28rem; }
+    .header h1 a {
+      color: #fff; }
+  .header em {
+    position: absolute;
+    width: 1.57rem;
+    height: 1.57rem;
+    background: #fff;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    left: .24rem;
+    top: 50%;
+    margin-top: -.78rem;
+    font-size: 1rem;
+    overflow: hidden;
+    text-align: center;
+    line-height: 2rem; }
+  .header p {
+    position: absolute;
+    right: .25rem;
+    top: .28rem; }
+    .header p a {
+      color: #fff;
+      font-size: .4rem; }
+
+/*----------------------main---------------------*/
+.main {
+  -webkit-flex: 1;
+  background: #f3f2f2;
+  overflow: hidden; }
+  .main p {
+    width: 100%;
+    height: .81rem;
+    color: #848484;
+    line-height: .81rem;
+    margin-bottom: .08rem;
+    background: #fff;
+    position: relative; }
+    .main p i {
+      margin: 0 .25rem; }
+    .main p a {
+      position: absolute;
+      width: 100%;
+      right: .25rem;
+      top: 0;
+      text-align: right;
+      color: #848484;
+      z-index: 9999; }
+
+/*----------------------footer---------------------*/
+.footer {
+  width: 100%;
+  height: .96rem;
+  border-top: 1px solid #f3f2f2; }
+  .footer nav {
+    position: relative;
+    z-index: 2; }
+  .footer a {
+    float: left;
+    width: 25%;
+    height: .96rem;
+    text-align: center; }
+    .footer a i {
+      font-size: .5rem;
+      font-weight: bold;
+      line-height: .6rem; }
+  .footer small {
+    display: block;
+    font-weight: 100;
+    font-size: .2rem;
+    line-height: .36rem; }
+
+/*# sourceMappingURL=user.css.map */

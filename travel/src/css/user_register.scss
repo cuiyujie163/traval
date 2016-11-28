@@ -1,0 +1,141 @@
+@import url("reset.css");
+@font-face {
+  	font-family:'iconfont';
+  	src: url('../fonts/fontawesome-webfont.ttf') format("truetype"),
+  	url('../fonts/fontawesome-webfont.woff') format("woff");
+}
+/*--------------------------wrap------------------------------*/
+%full{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+%display{
+	display:none;
+}
+
+@mixin pos($p:absolute){
+	position:$p;
+}
+html,body,.wrap{
+	@extend %full;
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+body{
+	font-size:16px;
+}
+/*--------------------------header------------------------------*/
+.header{
+	width:100%;
+	height:.9rem;
+	background:#39d184;
+	@include pos(relative);
+	h1{
+		width:100%;
+		padding: 0 .53rem;
+		font:{
+			family:"Microsoft YaHei";
+			weight:100;
+			size:.4rem;
+		}
+		color:#fff;
+		text-align:center;
+		line-height:.9rem;
+		overflow:hidden;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+	}
+	a{
+		width:.5rem;
+		display:block;
+		height:.9rem;
+		color:#fff;
+		font-size:.4rem;
+		line-height:.9rem;
+		@include pos;
+		top:50%;
+		margin-top:-.45rem;
+		left:.2rem;
+	}
+}
+/*--------------------------main------------------------------*/
+.main{
+	-webkit-flex:1;
+	padding:.25rem;
+	p{
+		width:100%;
+		height:.94rem;
+		border-bottom: 1px solid #ccc;
+		display:-webkit-flex;
+		@include pos(relative);
+		a{
+			width:1.2rem;
+			height:.45rem;
+			@include pos;
+			right:0;
+			top:.45rem;
+			line-height:.45rem;
+			text-align: center;
+			color:#f73a5e;
+			font-size:.16rem;
+		}
+	}
+	input{
+		-webkit-flex-grow:1;
+		height:.9rem;
+		border:none;
+		outline:none;
+	}
+	h2{
+		width:100%;
+		height:.7rem;
+		margin-top:.4rem;
+		padding:0 1.25rem;
+		&:nth-of-type(1){
+			margin-top:1.6rem;
+		};
+		&:nth-of-type(2){
+			margin-bottom:.4rem;
+		};
+		a{
+			display:block;
+			width:100%;
+			height:.7rem;
+			border-radius: 7px;
+			background: #3bbe7a;
+			color:#fff;
+			text-align: center;
+			line-height:.7rem;
+		}
+	}
+	h4{
+		width:100%;
+		height:.6rem;
+		display:-webkit-flex;
+		a{
+			-webkit-flex:1;
+			&:nth-of-type(2){
+				text-align:right;
+				color:#f73a5e;
+			};
+		}
+	}
+	h3{
+		width:100%;
+		height:.9rem;
+		line-height:.9rem;
+		text-align: center;
+	}
+	.register{
+		width:100%;
+		display:-webkit-flex;
+		a{
+			-webkit-flex:1;
+			padding:.5rem;
+			img{
+				width:100%;
+			}
+		}
+	}
+}

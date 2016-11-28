@@ -1,0 +1,87 @@
+@import url("reset.css");
+@font-face {
+  	font-family:'iconfont';
+  	src: url('../fonts/fontawesome-webfont.ttf') format("truetype"),
+  	url('../fonts/fontawesome-webfont.woff') format("woff");
+}
+/*--------------------------wrap------------------------------*/
+%full{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+%display{
+	display:none;
+}
+
+@mixin pos($p:absolute){
+	position:$p;
+}
+html,body,.wrap{
+	@extend %full;
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+body{
+	font-size:16px;
+}
+/*--------------------------header------------------------------*/
+.header{
+	width:100%;
+	height:.9rem;
+	background:#39d184;
+	@include pos(relative);
+	h1{
+		width:100%;
+		padding: 0 .53rem;
+		font:{
+			family:"Microsoft YaHei";
+			weight:100;
+			size:.4rem;
+		}
+		color:#fff;
+		text-align:center;
+		line-height:.9rem;
+		overflow:hidden;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+	}
+	a{
+		width:.5rem;
+		display:block;
+		height:.9rem;
+		color:#fff;
+		font-size:.4rem;
+		line-height:.9rem;
+		@include pos;
+		top:50%;
+		margin-top:-.45rem;
+		left:.2rem;
+	}
+}
+/*--------------------------main------------------------------*/
+.main{
+	-webkit-flex:1;
+	padding:.25rem;
+	p{
+		width:100%;
+		height:.81rem;
+		color:#848484;
+		line-height:.81rem;
+		margin-bottom: .08rem;
+		background: #fff;
+		@include pos(relative);
+		i{
+			margin:0 .25rem;
+		}
+		a{
+			@include pos;
+			width:100%;
+			right:.25rem;
+			top:0;
+			text-align: right;
+			color:#848484;
+			z-index:9999;
+		}
+	}
+}

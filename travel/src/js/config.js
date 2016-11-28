@@ -1,0 +1,177 @@
+angular.module("myapp")
+	.config(config);
+function config ($stateProvider,$urlRouterProvider,$ocLazyLoadProvider){
+	//console.log($ocLazyLoadProvider)
+	$urlRouterProvider.otherwise("index");
+	$stateProvider
+		.state("index",{
+			url:"/index",
+			templateUrl:"view/index.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/style.css','js/buli/index.js']
+						}
+					])
+				}
+			}
+		})
+		.state("home",{
+			url:"/home",
+			templateUrl:"view/home.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/home.css','js/buli/home.js']
+						}
+					])
+				}
+			}
+		})
+		.state("marker",{
+			url:"/marker",
+			templateUrl:"view/marker.html",
+			controller:"marker",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/marker.css','js/buli/marker.js']
+						}
+					])
+				}
+			}
+		})
+		.state("compass",{
+			url:"/compass",
+			templateUrl:"view/compass.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/compass.css','js/buli/compass.js']
+						}
+					])
+				}
+			}
+		})
+		.state("user",{
+			url:"/user",
+			templateUrl:"view/user.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/user.css','js/buli/user.js']
+						}
+					])
+				}
+			}
+		})
+		.state("user_register",{
+			url:"/user_register",
+			templateUrl:"view/user_register.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/user_register.css']
+						}
+					])
+				}
+			}
+		})
+		.state("wallet",{
+			url:"/wallet",
+			templateUrl:"view/wallet.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/wallet.css']
+						}
+					])
+				}
+			}
+		})
+		.state("pwd",{
+			url:"/pwd",
+			templateUrl:"view/pwd.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/pwd.css']
+						}
+					])
+				}
+			}
+		})
+		.state("common",{
+			url:"/common",
+			templateUrl:"view/common.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/common.css']
+						}
+					])
+				}
+			}
+		})
+		.state("history",{
+			url:"/history",
+			templateUrl:"view/history.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/history.css']
+						}
+					])
+				}
+			}
+		})
+		.state("cate",{
+			url:"/cate",
+			templateUrl:"view/cate.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/cate.css','js/buli/cate.js']
+						}
+					])
+				}
+			}
+		})
+		.state("collect",{
+			url:"/collect",
+			templateUrl:"view/collect.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/collect.css','js/buli/collect.js']
+						}
+					])
+				}
+			}
+		})
+		.state("inland",{
+			url:"/inland",
+			templateUrl:"view/inland.html",
+			resolve:{
+				loadPlugin:function($ocLazyLoad){
+					return $ocLazyLoad.load([
+						{
+							files:['css/font-awesome.css','css/inland.css','js/buli/inland.js']
+						}
+					])
+				}
+			}
+		});
+}

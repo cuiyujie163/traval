@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url("reset.css");
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+/*--------------------------wrap------------------------------*/
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html, body, .wrap {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+body {
+  font-size: 16px; }
+
+/*----------------------header---------------------*/
+.header {
+  width: 100%;
+  height: .9rem;
+  background: #39d184;
+  position: relative; }
+  .header h1 {
+    width: 100%;
+    height: .9rem;
+    text-align: center;
+    line-height: .9rem;
+    color: #fff; }
+
+/*----------------------main---------------------*/
+.main {
+  -webkit-flex: 1;
+  background: #f3f2f2;
+  overflow: hidden; }
+
+.swiper-container {
+  width: 100%;
+  height: 2.35rem;
+  position: relative;
+  overflow: hidden;
+  /* 褰撳墠鍒嗛〉鍣ㄧ殑鏍峰紡 */ }
+  .swiper-container .swiper-wrapper {
+    height: 100%;
+    display: -webkit-flex; }
+  .swiper-container .swiper-slide {
+    width: 100%;
+    height: 100%;
+    -webkit-flex-shrink: 0; }
+  .swiper-container img {
+    width: 100%;
+    height: 100%; }
+  .swiper-container .pagination {
+    position: absolute;
+    bottom: .28rem;
+    right: .2rem;
+    width: .72rem;
+    height: .1rem;
+    display: -webkit-flex;
+    text-align: center; }
+  .swiper-container .pagination span {
+    -webkit-flex: 1;
+    height: 100%;
+    background: #cececf;
+    border-radius: 50%;
+    margin-right: .07rem; }
+    .swiper-container .pagination span:last-child {
+      margin-right: 0; }
+  .swiper-container .pagination .swiper-active-switch {
+    background: #fff; }
+
+h2 {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0 .2rem 0 .7rem;
+  background: #fff;
+  position: relative; }
+  h2 img {
+    width: .3rem;
+    position: absolute;
+    top: .28rem;
+    left: .22rem; }
+  h2 a {
+    position: absolute;
+    right: .2rem;
+    color: #999999; }
+
+.h2 {
+  margin-bottom: .2rem; }
+
+.img {
+  width: 100%;
+  padding: 0 .23rem;
+  background: #fff; }
+  .img p {
+    width: 100%;
+    height: 3.54rem;
+    margin-bottom: .23rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; }
+    .img p img {
+      width: 100%;
+      height: 100%; }
+    .img p span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 3.54rem;
+      line-height: 3.54rem;
+      text-align: center;
+      color: #fff;
+      font-size: .4rem; }
+
+/*----------------------footer---------------------*/
+.footer {
+  width: 100%;
+  height: .96rem;
+  border-top: 1px solid #f3f2f2; }
+  .footer nav {
+    position: relative;
+    z-index: 2; }
+  .footer a {
+    float: left;
+    width: 25%;
+    height: .96rem;
+    text-align: center; }
+    .footer a i {
+      font-size: .5rem;
+      font-weight: bold;
+      line-height: .6rem; }
+  .footer small {
+    display: block;
+    font-weight: 100;
+    font-size: .2rem;
+    line-height: .36rem; }
+
+/*# sourceMappingURL=compass.css.map */

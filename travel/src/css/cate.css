@@ -1,0 +1,87 @@
+@import url("reset.css");
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+/*--------------------------wrap------------------------------*/
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html, body, .wrap {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+body {
+  font-size: 16px; }
+
+/*--------------------------header------------------------------*/
+.header {
+  width: 100%;
+  height: .9rem;
+  background: #39d184;
+  position: relative; }
+  .header h1 {
+    width: 100%;
+    padding: 0 .53rem;
+    font-family: "Microsoft YaHei";
+    font-weight: 100;
+    font-size: .4rem;
+    color: #fff;
+    text-align: center;
+    line-height: .9rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .header a {
+    width: .5rem;
+    display: block;
+    height: .9rem;
+    color: #fff;
+    font-size: .4rem;
+    line-height: .9rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -.45rem;
+    left: .2rem; }
+
+/*--------------------------main------------------------------*/
+.main {
+  -webkit-flex: 1;
+  padding: .2rem .25rem;
+  overflow: hidden; }
+  .main .cate {
+    width: 100%; }
+    .main .cate .left {
+      width: 50%;
+      display: inline-block;
+      padding-right: .2rem; }
+    .main .cate .right {
+      width: 50%;
+      display: inline-block; }
+    .main .cate dl {
+      width: 100%; }
+      .main .cate dl dt {
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 0; }
+        .main .cate dl dt img {
+          width: 100%; }
+      .main .cate dl dd {
+        position: relative; }
+        .main .cate dl dd h2 {
+          height: .65rem;
+          line-height: .65rem;
+          color: #7d7d7d; }
+        .main .cate dl dd p {
+          height: .36rem;
+          line-height: .36rem;
+          color: #c5c5c5;
+          font-size: .1rem; }
+        .main .cate dl dd img {
+          position: absolute;
+          right: 0;
+          bottom: .1rem; }
+
+/*# sourceMappingURL=cate.css.map */

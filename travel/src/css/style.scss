@@ -1,0 +1,79 @@
+@import url("reset.css");
+@font-face {
+  	font-family:'iconfont';
+  	src: url('../fonts/fontawesome-webfont.ttf') format("truetype"),
+  	url('../fonts/fontawesome-webfont.woff') format("woff");
+}
+/*--------------------------wrap------------------------------*/
+%full{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+%display{
+	display:none;
+}
+
+@mixin pos($p:absolute){
+	position:$p;
+}
+html,body,.wrap{
+	@extend %full;
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+body{
+	font-size:16px;
+}
+/*--------------------------swiper-container------------------------------*/
+.swiper-container{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+.swiper-wrapper{
+	height:100%;
+	display: -webkit-flex;
+}
+.swiper-slide{
+		width:100%;
+		height:100%;
+		-webkit-flex-shrink:0;
+}
+.menu{
+	width:100%;
+	height:100%;
+}
+img{
+	width:100%;
+	height:100%;
+}
+.pagination{
+	@include pos;
+	bottom: 1.26rem;
+	left:3.08rem;
+	width:1.7rem;
+	height:.06rem;
+	display:-webkit-flex;
+}
+.pagination span{
+	-webkit-flex:1;
+	height:.06rem;
+	background: #8ea1f6;
+	border-radius: 2px;
+	margin-right: 8px;
+}
+/* 当前分页器的样式 */
+.pagination .swiper-active-switch{
+	background: #fff;
+}
+.home{
+	@include pos(relative);
+	a{
+		width:2.4rem;
+		height:.77rem;
+		@include pos;
+		left:2.5rem;
+		bottom: 2.2rem;
+	}
+}

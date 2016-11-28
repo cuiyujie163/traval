@@ -1,0 +1,123 @@
+@import url("reset.css");
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+/*--------------------------wrap------------------------------*/
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html, body, .wrap {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+body {
+  font-size: 16px; }
+
+/*----------------------header---------------------*/
+.header {
+  width: 100%;
+  height: .9rem;
+  background: #39d184;
+  position: relative;
+  z-index: 9999; }
+  .header h1 {
+    width: 100%;
+    padding: 0 .53rem;
+    font-family: "Microsoft YaHei";
+    font-weight: 100;
+    font-size: .4rem;
+    color: #fff;
+    text-align: center;
+    line-height: .9rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .header a {
+    width: auto;
+    height: .8rem;
+    color: #fff;
+    font-size: .4rem;
+    line-height: .8rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -.4rem;
+    left: .1rem; }
+
+/*----------------------main---------------------*/
+.main {
+  -webkit-flex: 1;
+  background: #f3f2f2;
+  overflow: hidden; }
+  .main h1 {
+    width: 100%;
+    padding: .15rem;
+    position: relative;
+    text-align: center; }
+    .main h1 input {
+      background: #fff;
+      border-radius: 15px;
+      width: 100%;
+      height: .6rem;
+      padding-left: .7rem;
+      border: none;
+      outline: none;
+      color: #bbbbbb; }
+    .main h1 i {
+      position: absolute;
+      left: .35rem;
+      bottom: .3rem;
+      color: #5cc890; }
+  .main .banner {
+    width: 100%;
+    height: 1.88rem; }
+    .main .banner img {
+      width: 100%;
+      height: 100%; }
+  .main .hot {
+    width: 100%;
+    height: 3.8rem;
+    background: #fff;
+    padding: 0 .25rem; }
+    .main .hot h2 {
+      height: .64rem;
+      line-height: .64rem; }
+    .main .hot ul {
+      width: 100%; }
+      .main .hot ul li {
+        width: 1.5rem;
+        height: .75rem;
+        text-align: center;
+        margin: .13rem .1rem;
+        line-height: .75rem;
+        float: left;
+        background: #f3f2f2;
+        color: #bbbbbb; }
+  .main .time {
+    width: 100%;
+    margin-top: .2rem;
+    background: #fff;
+    padding: 0 .25rem; }
+    .main .time h2 {
+      height: .64rem;
+      line-height: .64rem;
+      color: #ff490b;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: .2rem; }
+    .main .time dl {
+      width: 3.2rem;
+      height: 2.85rem;
+      display: inline-block;
+      margin-right: .25rem; }
+      .main .time dl dt {
+        width: 100%;
+        height: 2.2rem;
+        overflow: hidden; }
+        .main .time dl dt img {
+          width: 100%; }
+      .main .time dl dd {
+        line-height: .65rem;
+        text-align: center; }
+
+/*# sourceMappingURL=inland.css.map */
